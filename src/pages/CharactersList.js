@@ -1,5 +1,3 @@
 export default function CharactersList() {
-  return (
-    <h1>thats from the characters page</h1>
-  )
+  return <h1>that is from the characters page</h1>;
 }
