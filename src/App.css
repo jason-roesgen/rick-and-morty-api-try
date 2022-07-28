@@ -13,3 +13,11 @@ body {
 .container {
   margin-left: 0 !important;
 }
+
+.navbar {
+  background-color: lightgray;
+}
+
+.search-bar {
+  margin-right: 15px;
+}

@@ -7,12 +7,9 @@ import EpisodesList from "./pages/EpisodesList";
 import CharactersList from "./pages/CharactersList";
 import Home from "./pages/Home";
 
-// first todos:
-// 1. add top bar
-// 2. add search bar
-// 3. adjust search bar with magnifying glass	icon
-// 4. add 2 pages (for characters & episodes)
-// 5. add routing (maybe put both pages as buttons on the left of the top bar?)
+// - adjust search bar with magnifying glass icon
+// - add the Rick & Morty API
+
 function App() {
   let component;
   switch (window.location.pathname) {
@@ -27,7 +24,7 @@ function App() {
   }
   return (
     <>
-      <Navbar bg="light" expand="sm">
+      <Navbar expand="sm" className="navbar">
         <Container>
           <Navbar.Brand href="/home">Coding Challenge</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -38,6 +35,7 @@ function App() {
             </Nav>
           </Navbar.Collapse>
         </Container>
+        <input type="text" className="search-bar" placeholder="Search..."></input>
       </Navbar>
 
       {component}
