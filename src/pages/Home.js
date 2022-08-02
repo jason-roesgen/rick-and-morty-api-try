@@ -7,8 +7,9 @@ export default function Home() {
 
   useEffect(() => {
     fetchData();
+    console.log("posts:", posts);
   }, []);
-
+  
   const fetchData = async () => {
     const { data } = await axios.get("https://jsonplaceholder.typicode.com/posts");
     setPosts(data);
